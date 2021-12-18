@@ -40,7 +40,7 @@ class CarInterface(CarInterfaceBase):
       set_lat_tune(ret.lateralTuning, LatTunes.INDI_PRIUS)
       ret.steerActuatorDelay = 0.3
 
-    elif candidate in [CAR.RAV4, CAR.RAV4H]:
+    elif candidate in [CAR.RAV4, CAR.RAV4H, CAR.YARIS]:
       stop_and_go = True if (candidate in CAR.RAV4H) else False
       ret.wheelbase = 2.65
       ret.steerRatio = 16.88   # 14.5 is spec end-to-end
